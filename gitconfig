@@ -3,4 +3,11 @@
         name = Clayton
 [alias]
         co = checkout
-	praise = blame
+	    praise = blame
+	    br = branch
+	    ci = commit
+	    st = status
+[push]
+        autoSetupRemote = true
+[commit]
+        gpgsign = true
