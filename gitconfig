@@ -11,3 +11,5 @@
         autoSetupRemote = true
 [commit]
         gpgsign = true
+[gpg]
+        format = ssh
