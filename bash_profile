@@ -34,6 +34,7 @@ alias ddnc='nc -ulk -vv 8125'
 # Git Shortcuts #
 #################
 alias gs="git status"
+alias syncfork="git co main && git fetch upstream && git merge upstream/main && git push origin main"
 
 # Clean up merged branches
 alias gcmb="git branch --merged | grep -Ev '(^\*|master|main|develop)' | xargs git branch -d"
