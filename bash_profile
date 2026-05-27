@@ -35,6 +35,7 @@ alias ddnc='nc -ulk -vv 8125'
 #################
 alias gs="git status"
 alias syncfork="git co main && git fetch upstream && git merge upstream/main && git push origin main"
+alias gitsync="git co main && if git remote get-url upstream &>/dev/null; then git fetch upstream && git merge upstream/main && git push origin main; else git pull origin main; fi"
 
 # Clean up merged branches
 alias gcmb="git branch --merged | grep -Ev '(^\*|master|main|develop)' | xargs git branch -d"
